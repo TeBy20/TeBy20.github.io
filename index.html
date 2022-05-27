@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTROCUCCION AL DESARROLLO WEB</title>
+</head>
+<body>
+    <!--El <hr> crea una linea horizontal y no necesita ser cerrada-->
+    <h1>Este es el encabezado o titulo visible</h1>
+    <p>Este es el primer parrafo de texto</p>
+    <p>Este es otro parrafo de texto</p>
+
+    <!--LISTAS-->
+    <h2><u>LISTAS</u></h2>
+        <h3>Lista no ordenada</h3>
+        <ul><!--UL=listas no ordenadas-->
+            <!--el LI sirve para indicar los elementos de la lista-->
+            <li>primavera</li>
+            <li>verano</li>
+            <li>otoño</li>
+            <li>invierno</li>
+        </ul>
+        <h3>Lista ordenada</h3>
+        <ol><!--OL= listas ordenadas-->
+            <li>lunes</li>
+            <li>martes</li>
+            <li>miercoles</li>
+            <li>jueves</li>
+            <li>viernes</li>
+            <li>sabado</li>
+            <li>domingo</li>
+        </ol>
+    <!--TABLA-->
+    <h2><u>TABLAS</u></h2>
+    <!--TR= filas-->
+    <!--TH= encavezado de la tabla-->
+    <!--TD= columnas-->
+
+        <table border="1">
+            <tr>
+                <th colspan="2">Encabezado</th>
+                <th>Encabezado</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Fila 1 y 2 - Columna 1</td>
+                <td>Fila 1 - Columna 2</td>
+                <td>Fila 1 - Columna 3</td>
+            </tr>
+            <tr>
+                <td>Fila 2 - Columna 2</td>
+                <td>Fila 2 - Columna 3</td>
+            </tr>
+            <tr>
+                <td>Fila 3 - Columna 1</td>
+                <td>Fila 3 - Columna 2</td>
+                <td>Fila 3 - Columna 3</td>
+            </tr>
+        </table>
+    
+    <!--FORMULARIOS-->
+    <h3><u>FORMULARIOS</u></h3>
+    <form action=" " method="post">
+
+        <label>TU NOMBRE</label>
+        <br>
+        <input type="text">
+        <br>
+        <br>
+        <label>MENSAJE</label>
+        <br>
+        <textarea></textarea>
+        <br>
+        <br>
+        <label>Tu equipo favorito (select)</label>
+        <br>
+        <select>
+            <option>Boca juniors</option>
+            <option>Tigres</option>
+            <option>River</option>
+            <option>Independiente</option>
+            <option>Sarmiento</option>
+        </select>
+        <br>
+        <br>
+        <label>Equipos que descendieron:</label><br>
+        <input type="checkbox" checked>Boca <br>
+        <input type="checkbox">San Lorenzo <br>
+        <input type="checkbox">Racing <br>
+        <input type="checkbox">River <br>
+        <input type="checkbox">Independiente <br>
+        <br>
+        <br>
+        <label>Categorias</label>
+        <br>
+        <input type="radio"> Grande
+        <input type="radio">Chico
+        <br>
+        <br>
+        <label>Suba el escudo de su equipo</label>
+        <br>
+        <input type="file">
+        <br>
+        <br>
+        <input type="hidden" value="3.1216">
+        <br>
+        <br>
+        <input type="reset">
+        <br>
+        <br>
+        <input type="submit" value="MOSTRAR">
+    </form>
+    <header>
+        La etiqueta header contiene la cabezera, practicamente se presenta como barra en la que se muestra la informacion, logo, descripcion, etc.
+    </header>
+    <nav>
+        Nav contiene la barra de navegacion de una pagina web
+    </nav>
+    <main>
+    <section>
+        Esta es una seccion de contenido del bloque principal (MAIN)
+            <article>
+                Esto es un articulo del sitio
+            </article>
+            <article>
+                Este serie el segundo articulo
+            </article>
+    </section>
+    </main>
+    <aside>
+        La etiqueta aside contiene informacion accesoria, que nos suele añadir un valor significativo a la tematica de la pagina.
+        Puede ser usada para la barra lateral en las que puede ir elementos de widgets, con cualquier contenido dentro
+    </aside>
+    <footer>
+        Footer contiene el pie de pagina, puede ir en ellla enlaces, mapa del sitio, etc.
+    </footer>
+
+
+    <figure>
+        <img src="img/boca.jpg" alt="El rey de copas" width="50%">
+        <figcaption>Fig.1 - Escudo de Boca Juniors</figcaption>
+    </figure>
+    <video width="320" height="240" controls>
+        <source src="bandera.mp4" type="video/mp4">
+        <source src="bandera.ogg" type="video/ogg">
+        Su navegador no soporta la etiqueta video
+    </video>
+    <audio controls>
+        <source src="dale-boca.ogg" type="audio/ogg">
+        <source src="dale-boca.mp3" type="audio/mpeg">
+        Su navegador no soporta el elemento audio
+    </audio>
+    <br>
+    <br>
+    <h3>FORMULARIOS EN HTML 5</h3>
+
+    <h5>FORMULARIO - ATRIBUTOS</h5>
+    <p>REQUIRED: obliga al usuario a completar una seccion del formulario</p>
+    <p>READONLY(solo lectura): no permite ingresar datos nuevos</p>
+    <p>DISABLE: deshabilita casillas en el formulario</p>
+    <p>PLACEHOLDER: le muestra una ayuda al usuario en gris (ej: ingrese su nombre)</p>
+    <p>AUTOFOCUS: posiciona al curor en el elemento que fallo o que nosotros elegimos</p>
+    <p>NOVALIDATE: no controla lo que el usuario ingres</p>
+
+    <form method="post" action="...">
+        
+        <label for="fecha">Fecha</label><br>
+        <input type="date">
+        <br>
+        <label for="fechayhora">Fecha y Hora</label><br>
+        <input type="datetime-local">
+        <br>
+        <label for="mes">Mes</label><br>
+        <input type="month">
+        <br>
+        <label for="semana">Semana</label><br>
+        <input type="week">
+        <br>
+        <label for="hora">Hora</label><br>
+        <input type="time">
+        <br>
+        <label for="email">Email</label><br>
+        <input type="email" required>
+        <br>
+        <label for="numero">Numero</label><br>
+        <input type="number">
+        <br>
+        <label for="color">Color</label><br>
+        <input type="color">
+        <br>
+        <label for="url">URL</label><br>
+        <input type="url">
+
+        <br>
+        <br>
+        Enviar<input type="submit">
+    </form>
+</body>
+</html>
